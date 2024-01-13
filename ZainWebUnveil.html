@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZainWebUnveil</title>
+    <link rel="icon" type="image" href="logo.png">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            animation: glowEffect 2s ease-in-out infinite;
+        }
+
+        @keyframes glowEffect {
+            0%, 100% {
+                box-shadow: 0 0 5px #3498db;
+            }
+            50% {
+                box-shadow: 0 0 20px #3498db, 0 0 40px #3498db;
+            }
+        }
+        
+        header h1 {
+            margin-bottom: 10px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            display: inline-block;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #27ae60;
+            text-shadow: 0 0 10px #27ae60;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .intro {
+            background: url('background-image.jpg');
+            background-size: cover;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 20px 0;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            animation: fadeIn 1s ease-out;
+        }
+
+        .intro img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            animation: scaleIn 1s ease-out;
+        }
+
+        .intro p {
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .social-links-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .social-link {
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 24px;
+            margin: 0 10px;
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+            animation: glowLink 2s ease-in-out infinite, fadeIn 1s ease-out;
+        }
+
+        .social-link:hover {
+            background: #000;
+            padding: 10px;
+            width: 120px;
+            color: #3498db;
+            text-shadow: 0 0 10px #3498db;
+        }
+
+        footer {
+            background-color: #222;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0.8);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .intro {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ZainWebUnveil</h1>
+    </header>
+
+    <nav>
+        <a href="ZainWebUnveil.html">Home</a>
+        <a href="port2.html">Portfolio</a>
+        <a href="https://linktr.ee/ZainWebUnveil">Social-Links</a>
+    </nav>
+
+    <main>
+        <div class="intro">
+            <img src="profile pic.jpg" alt="Profile Image">
+            <p>Greetings! I'm Zain Ashiq, a passionate individual with a keen interest in web development. Aspiring to create innovative and user-friendly digital experiences, I navigate the ever-evolving landscape of web technologies with enthusiasm and dedication. In addition to my passion for web development, I constantly seek opportunities to expand my skills and stay abreast of industry trends. With a foundation in coding languages like HTML, CSS, and JavaScript, I'm on a journey to craft dynamic and visually appealing websites. My commitment to delivering high-quality solutions drives me to explore new frameworks and technologies, ensuring a well-rounded skill set in the ever-evolving world of web development.</p>
+            <div class="social-links-container">
+                <a class="social-link" href="#" target="_blank">LinkedIn</a>
+                <a class="social-link" href="#" target="_blank">Twitter</a>
+                <a class="social-link" href="https://github.com/zainashiq613" target="_blank">GitHub</a>
+                <a class="social-link" href="#" target="_blank">Fiverr</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Zain Ashiq</p>
+    </footer>
+</body>
+</html>
